@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Easy-Tickets-Ts/static/css/main.3063b8d0.chunk.css",
-    "main.js": "/Easy-Tickets-Ts/static/js/main.5c7e2db1.chunk.js",
-    "main.js.map": "/Easy-Tickets-Ts/static/js/main.5c7e2db1.chunk.js.map",
+    "main.css": "/Easy-Tickets-Ts/static/css/main.b2a6d122.chunk.css",
+    "main.js": "/Easy-Tickets-Ts/static/js/main.87c9479a.chunk.js",
+    "main.js.map": "/Easy-Tickets-Ts/static/js/main.87c9479a.chunk.js.map",
     "runtime-main.js": "/Easy-Tickets-Ts/static/js/runtime-main.a83e6dda.js",
     "runtime-main.js.map": "/Easy-Tickets-Ts/static/js/runtime-main.a83e6dda.js.map",
     "static/css/2.ebd8d679.chunk.css": "/Easy-Tickets-Ts/static/css/2.ebd8d679.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.908ac6c9.chunk.js.map": "/Easy-Tickets-Ts/static/js/2.908ac6c9.chunk.js.map",
     "index.html": "/Easy-Tickets-Ts/index.html",
     "static/css/2.ebd8d679.chunk.css.map": "/Easy-Tickets-Ts/static/css/2.ebd8d679.chunk.css.map",
-    "static/css/main.3063b8d0.chunk.css.map": "/Easy-Tickets-Ts/static/css/main.3063b8d0.chunk.css.map",
+    "static/css/main.b2a6d122.chunk.css.map": "/Easy-Tickets-Ts/static/css/main.b2a6d122.chunk.css.map",
     "static/js/2.908ac6c9.chunk.js.LICENSE.txt": "/Easy-Tickets-Ts/static/js/2.908ac6c9.chunk.js.LICENSE.txt",
     "static/js/pdf.worker.entry.bce1a4c2.worker.js": "/Easy-Tickets-Ts/static/js/pdf.worker.entry.bce1a4c2.worker.js",
     "static/js/pdf.worker.entry.bce1a4c2.worker.js.LICENSE.txt": "/Easy-Tickets-Ts/static/js/pdf.worker.entry.bce1a4c2.worker.js.LICENSE.txt",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.a83e6dda.js",
     "static/css/2.ebd8d679.chunk.css",
     "static/js/2.908ac6c9.chunk.js",
-    "static/css/main.3063b8d0.chunk.css",
-    "static/js/main.5c7e2db1.chunk.js"
+    "static/css/main.b2a6d122.chunk.css",
+    "static/js/main.87c9479a.chunk.js"
   ]
 }

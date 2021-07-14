@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Easy-Tickets-Ts/static/css/main.daf5505c.chunk.css",
-    "main.js": "/Easy-Tickets-Ts/static/js/main.dff60d9d.chunk.js",
-    "main.js.map": "/Easy-Tickets-Ts/static/js/main.dff60d9d.chunk.js.map",
+    "main.css": "/Easy-Tickets-Ts/static/css/main.16f48da9.chunk.css",
+    "main.js": "/Easy-Tickets-Ts/static/js/main.c7e71bec.chunk.js",
+    "main.js.map": "/Easy-Tickets-Ts/static/js/main.c7e71bec.chunk.js.map",
     "runtime-main.js": "/Easy-Tickets-Ts/static/js/runtime-main.a83e6dda.js",
     "runtime-main.js.map": "/Easy-Tickets-Ts/static/js/runtime-main.a83e6dda.js.map",
     "static/css/2.2372d269.chunk.css": "/Easy-Tickets-Ts/static/css/2.2372d269.chunk.css",
-    "static/js/2.ecf86af2.chunk.js": "/Easy-Tickets-Ts/static/js/2.ecf86af2.chunk.js",
-    "static/js/2.ecf86af2.chunk.js.map": "/Easy-Tickets-Ts/static/js/2.ecf86af2.chunk.js.map",
+    "static/js/2.3ad36417.chunk.js": "/Easy-Tickets-Ts/static/js/2.3ad36417.chunk.js",
+    "static/js/2.3ad36417.chunk.js.map": "/Easy-Tickets-Ts/static/js/2.3ad36417.chunk.js.map",
     "index.html": "/Easy-Tickets-Ts/index.html",
     "static/css/2.2372d269.chunk.css.map": "/Easy-Tickets-Ts/static/css/2.2372d269.chunk.css.map",
-    "static/css/main.daf5505c.chunk.css.map": "/Easy-Tickets-Ts/static/css/main.daf5505c.chunk.css.map",
-    "static/js/2.ecf86af2.chunk.js.LICENSE.txt": "/Easy-Tickets-Ts/static/js/2.ecf86af2.chunk.js.LICENSE.txt",
+    "static/css/main.16f48da9.chunk.css.map": "/Easy-Tickets-Ts/static/css/main.16f48da9.chunk.css.map",
+    "static/js/2.3ad36417.chunk.js.LICENSE.txt": "/Easy-Tickets-Ts/static/js/2.3ad36417.chunk.js.LICENSE.txt",
     "static/js/pdf.worker.entry.bce1a4c2.worker.js": "/Easy-Tickets-Ts/static/js/pdf.worker.entry.bce1a4c2.worker.js",
     "static/js/pdf.worker.entry.bce1a4c2.worker.js.LICENSE.txt": "/Easy-Tickets-Ts/static/js/pdf.worker.entry.bce1a4c2.worker.js.LICENSE.txt",
     "static/js/pdf.worker.entry.bce1a4c2.worker.js.map": "/Easy-Tickets-Ts/static/js/pdf.worker.entry.bce1a4c2.worker.js.map",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.a83e6dda.js",
     "static/css/2.2372d269.chunk.css",
-    "static/js/2.ecf86af2.chunk.js",
-    "static/css/main.daf5505c.chunk.css",
-    "static/js/main.dff60d9d.chunk.js"
+    "static/js/2.3ad36417.chunk.js",
+    "static/css/main.16f48da9.chunk.css",
+    "static/js/main.c7e71bec.chunk.js"
   ]
 }

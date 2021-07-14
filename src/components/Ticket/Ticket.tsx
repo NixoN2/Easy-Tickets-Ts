@@ -23,9 +23,9 @@ const Ticket: FC<TicketProps> = ({id,title,completed,pages}: TicketProps) => {
     }
     return (
         <div className="flex mt-3 ml-5">   	
-            <p className="text-french-mauve text-2xl max-w-7xl">{id}:  {title}</p>
+            <p className="text-french-mauve text-2xl font-serif max-w-7xl">{id}:  {title}</p>
             {completed ? <button onClick={onCheck} className="w-5 h-5 ml-2 mt-1.5 focus:outline-none bg-french-mauve rounded-sm"></button> : <button onClick={onCheck} className="w-5 h-5 ml-2 mt-1.5 focus:outline-none bg-white rounded-sm"></button>} 
-            <button onClick={onOpen} className="focus:outline-none bg-french-mauve ml-4 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve h-8 w-32">Открыть</button>
+            <button onClick={onOpen} className="focus:outline-none bg-french-mauve ml-4 rounded-xl text-valhalla text-xl font-serif text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve h-8 w-32">Открыть</button>
         </div>
     )
 }

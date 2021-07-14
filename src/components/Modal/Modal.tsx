@@ -1,12 +1,17 @@
 import { useRecoilState } from 'recoil';
-import { showState, pagesState, PdfState } from '../../store';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { showState, pagesState, PdfState, pdfPagesState } from '../../store';
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import { useState } from 'react';
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
 const Modal = () => {
     const [show, setShow]  = useRecoilState(showState);
     const [pages,setPages] = useRecoilState(pagesState);
     const [pdf, setPdf] = useRecoilState(PdfState);
+    const [pdfPages,setPdfPages] = useRecoilState(pdfPagesState);
     const [zoom, setZoom] = useState(1.7);
+    function onDocumentLoadSuccess({ numPages }: any) {
+        setPdfPages(numPages);
+    }
     const visible = show ? 'fixed top-0 left-0 w-screen h-screen block' : 'fixed top-0 left-0 w-screen h-screen hidden';
     const onClose = (e: any) => {
         setShow(false);
@@ -36,8 +41,8 @@ const Modal = () => {
                 </button>
                 <div className="flex justify-around pt-5">
                     <div>
-                        <button onClick={onPlusZoom} className="mr-6 w-8 h-8 bg-ebony text-french-mauve text-2xl rounded-xl">+</button>
-                        <button onClick={onMinusZoom} className="w-8 h-8 bg-ebony text-french-mauve text-2xl rounded-xl">-</button>
+                        <button onClick={onPlusZoom} className="mr-6 w-8 h-8 bg-ebony text-french-mauve text-2xl font-serif font-bold rounded-xl">+</button>
+                        <button onClick={onMinusZoom} className="w-8 h-8 bg-ebony text-french-mauve text-2xl font-serif font-bold rounded-xl">-</button>
                     </div>
                 </div>
             </div>
@@ -47,10 +52,11 @@ const Modal = () => {
                 {pages !== [] ? <Document
                     file={pdf} 
                     options={{ workerSrc: "/pdf.worker.js" }}
+                    onLoadSuccess={onDocumentLoadSuccess}
                     // className=" mx-auto"
                 >   
         {pages.map((el, index) => {return <Page key={`page_${index+1}`} pageNumber={el} scale={zoom} />} )}
-                </Document> : null}
+                </Document> : null }
             
             </section>
             </div>

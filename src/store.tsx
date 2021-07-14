@@ -38,6 +38,11 @@ export const pagesState = atom({
     default: [] as number[]
 })
 
+export const pdfPagesState = atom({
+    key: "PdfPages",
+    default: 0
+})
+
 export const infoValue = selector({
     key: "infoValue",
     get: ({get}) => ({

@@ -71,28 +71,29 @@ const FileParser: FC = () => {
             localStorage.setItem('lists',JSON.stringify(lists.concat({id: v4(), title: listTitle, tickets: ticketListTickets})));
             (document.getElementById('name') as HTMLInputElement).value = '';
             (document.getElementById('txt') as HTMLInputElement).value = '';
-            (document.getElementById('pdf') as HTMLInputElement).value = '';
+            setTitle('');
             setTxtFile(false);
+            
         }
 
     }
     return (
-        <div>
-            <input onChange={titleOnChange} className="focus:outline-none  bg-french-mauve ml-5 mt-5 w-96 h-9 pl-2 text-lg font-serif rounded-lg text-valhalla placeholder-valhalla placeholder-opacity-85" type="text" placeholder="Введите название списка:" id="name"/>
+        <div className="flex">
+            <input onChange={titleOnChange} className="focus:outline-none  bg-french-mauve ml-5 mt-5 w-96 h-10 pl-2 text-xl font-serif  rounded-lg text-valhalla placeholder-valhalla placeholder-opacity-85" type="text" placeholder="Введите название списка:" id="name"/>
             
-            { txtFile ? <label className="bg-french-mauve ml-3 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve outline p-1.5 pl-5 pr-5" htmlFor="txt">Выберите txt-файл <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pb-1 bg-french-mauve inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            { txtFile ? <label className="bg-french-mauve ml-3 mt-5 rounded-xl h-10 text-valhalla text-xl font-serif  text-center pt-1 cursor-pointer hover:border-pink-lavender border-2 border-french-mauve pl-5 pr-5" htmlFor="txt">Выберите txt-файл <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pb-1 bg-french-mauve inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg></label> :
-                <label className="bg-french-mauve ml-3 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve outline p-1.5 pl-5 pr-5" htmlFor="txt">Выберите txt-файл </label>
+                <label className=" bg-french-mauve ml-3 mt-5 rounded-xl h-10 text-valhalla text-xl font-serif  text-center pt-1 cursor-pointer hover:border-pink-lavender border-2 border-french-mauve pl-5 pr-5" htmlFor="txt">Выберите txt-файл </label>
             }
             <input onChange={txtOnChange} className="w-0 h-0" type="file" id="txt"/>
-            {pdf === '' ? <label className="bg-french-mauve ml-3 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve p-1.5 pl-5 pr-5" htmlFor="pdf">Выберите pdf-файл</label>
-            :   <label htmlFor="pdf" className="bg-french-mauve ml-3 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve p-1.5 pl-5 pr-5">Выберите pdf-файл <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pb-1 bg-french-mauve inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {pdf === '' ? <label className="bg-french-mauve ml-3 mt-5 rounded-xl h-10 text-valhalla text-xl font-serif  text-center pt-1 cursor-pointer hover:border-pink-lavender border-2 border-french-mauve pl-5 pr-5" htmlFor="pdf">Выберите pdf-файл</label>
+            :   <label htmlFor="pdf" className="bg-french-mauve ml-3 mt-5 rounded-xl h-10 text-valhalla text-xl font-serif  text-center pt-1 cursor-pointer hover:border-pink-lavender border-2 border-french-mauve pl-5 pr-5">Выберите pdf-файл <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 pb-1 bg-french-mauve inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg></label>
             }
             <input onChange={pdfOnChange} className="w-0 h-0" type="file" id="pdf"/>
-            <button onClick={addTicketList} className="focus:outline-none bg-french-mauve ml-3 rounded-xl text-valhalla text-lg text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve h-10 w-32">Добавить</button>
+            <button onClick={addTicketList} className="focus:outline-none bg-french-mauve ml-3 mt-5 rounded-xl text-valhalla text-xl font-serif  text-center cursor-pointer hover:border-pink-lavender border-2 border-french-mauve h-10 w-32">Добавить</button>
         </div>
     )
 }

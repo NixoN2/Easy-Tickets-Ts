@@ -33,10 +33,10 @@ const Header: FC = () => {
     // }
     return (
         <div className="bg-haiti w-screen h-20 flex justify-between">
-            <h1 className="text-french-mauve text-5xl mt-4 ml-5 font-serif">Easy Tickets</h1>
-            <select id="list-name" defaultValue="default" onChange={selectOnChange} className="mt-5 mr-10 focus:outline-none  w-96 h-10 text-lg font-serif text-valhalla rounded-md pl-2 bg-french-mauve">
+            <h1 className="text-french-mauve text-5xl mt-4 ml-5 font-bold font-serif">Easy Tickets</h1>
+            <select id="list-name" defaultValue="default" onChange={selectOnChange} className="mt-5 mr-10 focus:outline-none  w-96 h-10 text-xl font-serif text-valhalla rounded-md pl-2 bg-french-mauve">
                     <option key="default-option" disabled value="default" hidden>Выберите список</option>
-                    {listsNames ? listsNames.map((listName,idx) => <option className="text-lg font-serif text-valhalla" key={`${listName}-${idx}}`}>{listName}</option>) : null}
+                    {listsNames ? listsNames.map((listName,idx) => <option className="text-xl font-serif text-valhalla" key={`${listName}-${idx}}`}>{listName}</option>) : null}
             </select>
             <a href="https://github.com/NixoN2"><img className="mt-2 mr-16 w-16 h-16" src={github} alt="github"></img></a>
         </div>

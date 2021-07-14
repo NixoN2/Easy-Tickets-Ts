@@ -16,11 +16,12 @@ module.exports = {
         'french-mauve' : '#CD82D9',
         'pink-lavender' : '#E6C0EC'
       },
-      sizing: {
-        '1.5' : '6rem',
+      spacing: {
+        '1.5' : '0.375rem',
         '192' : '48rem',
         '160' : '40rem',
-        '128' : '32rem'
+        '128' : '32rem',
+        '9.5' : '2.375rem'
       }
     },
   },
